@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <title>HTML-5 FORM </title>
+    </head>
+    <body>
+        <h1 align="center">Registration form</h1>
+        <form>
+            <label>Enter your name:</label>
+            <input type="text" name="txtName" required> <br><br><br>
+            <label>Enter your mail id</label>
+            <input type="email" name="txtEmail" required> <br><br>
+            <label>Enter your password:</label>
+            <input type="password" name="txtPassword" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()-+])" title="Please enter a valid password (8-20 characters, including uppercase, lowercase, number, and special character)" required> <br><br><br>
+           
+            <label>Enter your roll number</label>
+            <input type="number" name="txtNumber"> <br><br>
+           
+            <label>Enter date of birth:</label>
+            <input type="date" name="txtDate"> <br><br>
+            <label>Enter your gender:</label>
+            <input type="radio" name="gender" value="male"> Male 
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="others"> others <br><br>
+            <label>Languages known: </label>
+            <input type="checkbox" name="language" value="telugu"> telugu <br><br>
+            <input type="checkbox" name="language" value="hindi">hindi  <br><br>
+            <input type="checkbox" name="language" value="english"> english <br><br>
+            <input type="checkbox" name="language" value="tamil"> tamil <br><br>
+            <label>Select your couse:</label>
+            <select name="course">
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="CSM">CSM</option>
+                <option value="CDS">CDS</option>
+                <option value="CSC">CSC</option> 
+            </select> <br><br>
+            <label>Enter your address:</label>
+            <textarea name="txtAddress" rows="4" cols="50"></textarea> <br><br>
+            <label>Select your favorite color:</label>
+            <input type="color" name="txtColor"> <br><br>
+            <label>Enter your phone number:</label>
+            <input type="tel" name="txtTel" pattern="[0-9]{10}" required="required"> <br><br>
+            <label>Choose your photo:</label>
+            <input type="file" name="txtFile"> <br><br>
+            <label>Expected salary:</label>
+            <input type="range" name="txtSalary" min="400000" max="600000"> <br><br>
+             <button type="submit">Register</button>
+
+        </form>
+    </body>
+</html>
